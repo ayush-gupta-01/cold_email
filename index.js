@@ -66,9 +66,9 @@ async function sendEmailsWithDelay() {
 
     if (i < data.length - 1) {
       console.log(
-        `⏳ Waiting 2 minutes before sending to ${data[i + 1].email}...`
+        `⏳ Waiting 30 seconds before sending to ${data[i + 1].email}...`
       );
-      await new Promise((resolve) => setTimeout(resolve, 2 * 60 * 1000));
+      await new Promise((resolve) => setTimeout(resolve, 0.5 * 60 * 1000));
     }
   }
 }
